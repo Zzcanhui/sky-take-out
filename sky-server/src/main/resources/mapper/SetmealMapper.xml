@@ -34,7 +34,7 @@
         order by s.create_time desc
     </select>
 
-    <update id="update" parameterType="Setmeal" useGeneratedKeys="true" keyProperty="id">
+     <update id="update" parameterType="Setmeal" useGeneratedKeys="true" keyProperty="id">
         update setmeal
         <set>
             <if test="categoryId != null">
