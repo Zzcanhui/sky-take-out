@@ -172,7 +172,7 @@ public class DishServiceImpl implements DishService {
      * @return
      */
     @Override
-    public List<DishVO> list(Long categoryId) {
+    public List<Dish> list(Long categoryId) {
         //根据分类id查询菜品
         Dish dish = Dish.builder()
                 .categoryId(categoryId)
@@ -212,5 +212,30 @@ public class DishServiceImpl implements DishService {
                 }
             }
         }
+    }
+
+    /**
+     * 条件查询菜品和口味
+     * @param dish
+     * @return
+     */
+    @Override
+    public List<DishVO> listWithFlavor(Dish dish) {
+        List<Dish> dishList = dishMapper.list(dish);
+
+        List<DishVO> dishVOList = new ArrayList<>();
+
+        for (Dish d : dishList) {
+            DishVO dishVO = new DishVO();
+            BeanUtils.copyProperties(d,dishVO);
+
+            //根据菜品id查询对应的口味
+            List<DishFlavor> flavors = dishFlavorMapper.getByDishId(d.getId());
+
+            dishVO.setFlavors(flavors);
+            dishVOList.add(dishVO);
+        }
+
+        return dishVOList;
     }
 }

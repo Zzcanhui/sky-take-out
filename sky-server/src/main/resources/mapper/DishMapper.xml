@@ -49,7 +49,7 @@
         where id = #{id}
     </update>
 
-    <select id="list" resultType="com.sky.vo.DishVO">
+    <select id="list" resultType="com.sky.entity.Dish">
         select d.*,c.name as categoryName from dish d
         left join category c on d.category_id = c.id
         <where>
