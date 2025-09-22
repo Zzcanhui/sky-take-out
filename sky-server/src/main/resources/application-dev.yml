@@ -21,9 +21,9 @@ sky:
     secret: ${WECHAT_SECRET}
     mchid: 1561414331
     mchSerialNo: 4B3B3DC35414AD50B1B755BAF8DE9CC7CF407606
-    privateKeyFilePath: D:\pay\apiclient_key.pem
+    privateKeyFilePath: C:\Users\Zch\Desktop\wxb0e3dbf6ee2038f7.txt
     apiV3Key: CZBK51236435wxpay435434323FFDuv3
-    weChatPayCertFilePath: D:\pay\wechatpay_166D96F876F45C7D07CE98952A96EC980368ACFC.pem
+    weChatPayCertFilePath: C:\Users\Zch\Desktop\wxb0e3dbf6ee2038f7.txt
     notifyUrl: https://88d90d2.r40.cpolar.top/notify/paySuccess
     refundNotifyUrl: https://88d90d2.r40.cpolar.top/notify/refundSuccess
 
