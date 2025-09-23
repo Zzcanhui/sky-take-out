@@ -24,7 +24,7 @@ sky:
     privateKeyFilePath: C:\Users\Zch\Desktop\wxb0e3dbf6ee2038f7.txt
     apiV3Key: CZBK51236435wxpay435434323FFDuv3
     weChatPayCertFilePath: C:\Users\Zch\Desktop\wxb0e3dbf6ee2038f7.txt
-    notifyUrl: https://88d90d2.r40.cpolar.top/notify/paySuccess
-    refundNotifyUrl: https://88d90d2.r40.cpolar.top/notify/refundSuccess
+    notifyUrl: https://6770c9fe.r40.cpolar.top//notify/paySuccess
+    refundNotifyUrl: https://6770c9fe.r40.cpolar.top//notify/refundSuccess
 
 
